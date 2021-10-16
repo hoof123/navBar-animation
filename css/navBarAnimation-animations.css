@@ -1,0 +1,206 @@
+/*
+roll left
+ */
+.roll-left {
+
+    animation-name: roll-left;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    visibility: visible;
+}
+
+/*
+keyframes
+ */
+@keyframes roll-left {
+
+    0% {
+
+        opacity: 1;
+
+        transform-origin: center center;
+        transform:
+        	translateX(0%);
+    }
+
+    100% {
+
+        opacity: 0;
+
+        transform:
+        	translateX(-400%)
+        	rotate(-180deg);
+    }
+}
+
+/*
+move down
+ */
+.move-down {
+
+	animation-name: move-down;
+	animation-duration: 2s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+}
+
+/*
+keyframes
+ */
+@keyframes move-down {
+
+	0% {
+
+		opacity: 0;
+
+		transform: translateY(-40px);
+	}
+
+	100% {
+
+		opacity: 1;
+
+		transform: translateY(0px);
+	}
+}
+
+/*
+slide right
+ */
+.slide-right {
+
+	animation-name: slide-right;
+	animation-duration: 1s;
+	animation-timing-function:  ease-in-out;
+	animation-fill-mode: forwards;
+}
+
+/*
+keyframes
+ */
+@keyframes slide-right {
+
+	0% {
+
+        opacity: 1;
+
+        transform-origin: center center;
+        transform:
+        	translateX(0%);
+	}
+
+	100% {
+
+        opacity: 1;
+
+        transform:
+        	translateX(200%);
+	}
+}
+
+/*
+slide down
+ */
+.slide-down {
+
+	animation-name: slide-down;
+	animation-duration: 1s;
+	animation-timing-function:  ease-in-out;
+	animation-fill-mode: forwards;
+}
+
+/*
+keyframes
+ */
+@keyframes slide-down {
+
+	0% {
+
+        opacity: 1;
+
+        transform-origin: center center;
+        transform:
+        	translateY(0%);
+	}
+
+	100% {
+
+        opacity: 1;
+
+        transform:
+        	translateY(200%);
+	}
+}
+
+/*
+slide left
+ */
+.slide-left {
+
+	animation-name: slide-left;
+	animation-duration: 1s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+}
+
+/*
+keyframes
+ */
+@keyframes slide-left {
+
+	0% {
+
+        opacity: 0;
+
+        transform-origin: center center;
+        transform:
+        	translate(100%, 100%);
+	}
+
+	100% {
+
+        opacity: 1;
+
+        transform:
+        	translate(0%, 0%);
+	}
+}
+
+/*
+reveal content
+ */
+.revealContent {
+
+	animation-name: revealContent;
+	animation-duration: 4s;
+	animation-fill-mode: forwards;
+}
+
+/*
+keyframes
+ */
+@keyframes revealContent {
+
+	0% {
+
+        opacity: 0;
+ 		transform:
+        	translateY(50px);
+	}
+
+	100% {
+
+        opacity: 1;
+        transform:
+        	translateY(0px);
+	}
+}
+
+/*
+fade item
+ */
+.fadeItem {
+
+		opacity: 0;
+		transition: opacity 3s ease-in-out;
+ }
